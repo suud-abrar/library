@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+  <header>
+    <img class="imglogo" src="../static/images/logoimge.png" alt="Bookworm Logo">
+    <div class="navbar">
+    <a href="{{url_for('index2') }}" class="nav_bar">Home</a>
+  <a href="{{url_for('borrowpage') }}" class="nav_bar">Borrow</a>
+</div>
+        <h1>Library book management system</h1>
+  </header>
+    <h1 class="welcome">Welcome to Bookworm!</h1>
+  <main>
+    <h2>Featured Books</h2>
+    <section class="book-list">
+      <article class="book">
+        <img src="../static/images/00.png" alt="Book 1">
+        <p>Available: 5</p>
+      </article>
+      <article class="book">
+        <img src="../static/images/10.png" alt="Book 2">
+        <p>Available: 5</p>
+      </article>
+      <article class="book">
+        <img src="../static/images/20.png" alt="Book 3">
+        <p>Available: 5</p>
+      </article>
+      <article class="book">
+        <img src="../static/images/30.png" alt="Book 4">
+        <p>Available: 5</p>
+      </article>
+      <article class="book">
+        <img src="../static/images/30.png" alt="Book 5">
+        <p>Available: 5</p>
+      </article>
+      <article class="book">
+        <img src="../static/images/30.png" alt="Book 6">
+        <p>Available: 5</p>
+      </article>
+      <article class="book">
+        <img src="../static/images/00.png" alt="Book 7">
+        <p>Available: 5</p>
+      </article>
+      <article class="book">
+        <img src="../static/images/30.png" alt="Book 8">
+        <p>Available: 2</p>
+      </article>
+      </section>
+  </main>
+</body>
+</html>
+
+

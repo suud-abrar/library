@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sign up</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='signup.css')}}">
+</head>
+<body>
+<div class="sign_up_form">
+    <img src="../static/images/bg.png">
+    <h1>SignUp Now</h1>
+    <form action="{{url_for('addrec') }}" method="POST">
+        <input type="text" class="input_box" placeholder="Your name" name="username" required>
+        <input type="password" class="input_box" placeholder="Your password" name="pass" required>
+        <p>I agree to the term of service</p>
+        <input type="submit" value="signup" class="sign-btn">
+        <p class="or">OR</p>
+        <hr>
+        <p>Do you have an account ? <a href="{{url_for('index1') }}">sign in</a></p>
+
+    </form>
+
+</div>
+</body>
+</html>
